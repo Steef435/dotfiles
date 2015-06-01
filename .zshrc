@@ -18,6 +18,9 @@ case $HOST in
 	steef-archlinux)
 		disphost=""
 		;;
+	amilo-arch)
+		disphost=""
+		;;
 	*)
 		disphost=@$HOST" "
 		;;
