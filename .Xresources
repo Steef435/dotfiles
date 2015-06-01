@@ -2,6 +2,7 @@
 #include ".colors/solarized"
 
 ! Large screen, large cursor
+Xcursor.theme: Vanilla-DMZ
 Xcursor.size: 24
 
 ! XTerm
