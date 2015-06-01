@@ -23,12 +23,16 @@ xset fp rehash
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # Resolution
-source ~/.xinit/resolution
+if [ -e ~/.xinit/resolution ]; then
+	source ~/.xinit/resolution
+fi
 
 xsetroot -cursor_name left_ptr &
 
 # Wallpaper
-source ~/.xinit/wallpaper
+if [ -e ~/.xinit/wallpaper ]; then
+	source ~/.xinit/wallpaper
+fi
 
 # dircolors theme
 eval `dircolors /usr/share/dircolors/dircolors.ansi-dark`
