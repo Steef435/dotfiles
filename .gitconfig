@@ -1,0 +1,10 @@
+[user]
+	name = Steef435
+	email = steefhegeman@hotmail.com
+[core]
+	editor = vim
+[color]
+	diff = auto
+	status = true
+[merge]
+	tool = vimdiff

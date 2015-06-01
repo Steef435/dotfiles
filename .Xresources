@@ -1,0 +1,25 @@
+! Colors
+#include ".colors/solarized"
+
+! Large screen, large cursor
+Xcursor.size: 24
+
+! XTerm
+xterm.termName: xterm-256color
+xterm.locale: true
+xterm.saveLines: 8192
+xterm*faceName: Ubunto Mono
+xterm*faceSize: 9
+
+! URxvt
+URxvt.fading: 0
+URxvt.font: xft:Ubuntu Mono:pixelsize=12:style=Mono
+URxvt.letterSpace: -1
+URxvt.saveLines: 8192
+URxvt.scrollBar: false
+URxvt.skipBuiltinGlyphs: true
+URxvt.internalBorder: 4
+
+! Disable Perl extensions
+URxvt.perl-ext-common:
+URxvt.perl-ext:
