@@ -91,7 +91,7 @@ export LESS='-R '
 
 # Set some defaults
 export EDITOR="vim"
-export BROWSER="dwb"
+export BROWSER="firefox"
 export XDG_CONFIG_HOME="/home/steef/.config"
 
 # List colors
