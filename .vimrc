@@ -13,7 +13,7 @@ if &t_Co > 2 || has("gui_running")
   "colorscheme base16-marrakesh
   syntax on
   set background=dark
-  colorscheme solarized
+  colorscheme base16-ateliersulphurpool
   set hlsearch
 endif
 

@@ -79,6 +79,9 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
 	zle -N zle-line-finish
 fi
 
+# Set Base16 colorscheme
+source $HOME/.colors/base16-ateliersulphurpool.dark.sh
+
 # ls colors
 alias ls='ls --color=auto'
 

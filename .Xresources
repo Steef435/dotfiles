@@ -1,5 +1,5 @@
 ! Colors
-#include ".colors/solarized"
+#include ".colors/base16-ateliersulphurpool.dark"
 
 ! Large screen, large cursor
 Xcursor.theme: Vanilla-DMZ
@@ -14,7 +14,7 @@ xterm*faceSize: 9
 
 ! URxvt
 URxvt.fading: 0
-URxvt.font: xft:Ubuntu Mono:pixelsize=12:style=Mono
+URxvt.font: xft:Ubuntu Mono:pixelsize=14:style=Mono
 URxvt.letterSpace: -1
 URxvt.saveLines: 8192
 URxvt.scrollBar: false
