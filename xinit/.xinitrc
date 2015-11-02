@@ -11,15 +11,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-#Default keyboard layout(For example, in altgr-intl, use [altgr+shift+"] instead of [shift+"] to generate chars like ë)
-#Change this setting for the current session by executing setxkbmap [layout]. Standard us is 'us', standard international is 'us intl'
+# Default keyboard layout(For example, in altgr-intl, use [altgr+shift+"] instead of [shift+"] to generate chars like ë)
+# Change this setting for the current session by executing setxkbmap [layout]. Standard us is 'us', standard international is 'us intl'
 setxkbmap us altgr-intl &
 
-#For some fonts(like Terminus):
+# For some fonts(like Terminus):
 xset +fp /usr/share/fonts/local
 xset fp rehash
 
-#Load Xresources
+# Load Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # Resolution
