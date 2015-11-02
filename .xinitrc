@@ -41,7 +41,7 @@ eval `dircolors /usr/share/dircolors/dircolors.ansi-dark`
 urxvtd &
 
 # dwm status
-~/scripts/status/status.sh &
+~/scripts/status/status.sh "#22a2c9" &
 
 # Start dwm in a loop
 while true; do
