@@ -1,5 +1,5 @@
 ! Colors
-#include ".colors/base16-ateliersulphurpool.dark"
+#include "../colors/.colors/base16-ateliersulphurpool.dark"
 
 ! Large screen, large cursor
 Xcursor.theme: Vanilla-DMZ
