@@ -2,6 +2,12 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" When using Neovim, include Vim's vimfiles
+set rtp^=/usr/share/vim/vimfiles/
+
+" Follow Vim's standard in mouse settings
+set mouse=
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -13,7 +19,7 @@ if &t_Co > 2 || has("gui_running")
   "colorscheme base16-marrakesh
   syntax on
   set background=dark
-  colorscheme base16-ateliersulphurpool
+  colorscheme wombie
   set hlsearch
 endif
 
