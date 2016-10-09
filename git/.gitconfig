@@ -1,5 +1,5 @@
 [user]
-	name = Steef435
+	name = Steef Hegeman
 	email = steefhegeman@hotmail.com
 [core]
 	editor = vim
@@ -8,3 +8,5 @@
 	status = true
 [merge]
 	tool = vimdiff
+[credential]
+	username = steef435
