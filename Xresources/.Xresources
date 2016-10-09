@@ -1,5 +1,5 @@
 ! Colors
-#include "../colors/.colors/base16-ateliersulphurpool.dark"
+#include "/home/steef/.colors/trilby"
 
 ! Large screen, large cursor
 Xcursor.theme: Vanilla-DMZ
@@ -9,12 +9,12 @@ Xcursor.size: 24
 xterm.termName: xterm-256color
 xterm.locale: true
 xterm.saveLines: 8192
-xterm*faceName: Ubunto Mono
+xterm*faceName: xft:Inconsolata:pixelsize=13:style=Mono
 xterm*faceSize: 9
 
 ! URxvt
 URxvt.fading: 0
-URxvt.font: xft:Ubuntu Mono:pixelsize=14:style=Mono
+URxvt.font: xft:Inconsolata:pixelsize=14:style=Mono
 URxvt.letterSpace: -1
 URxvt.saveLines: 8192
 URxvt.scrollBar: false
