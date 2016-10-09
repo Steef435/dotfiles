@@ -34,14 +34,18 @@ if [ -e ~/.xinit/wallpaper ]; then
 	source ~/.xinit/wallpaper
 fi
 
-# dircolors theme
-eval `dircolors /usr/share/dircolors/dircolors.ansi-dark`
+# Automatic PAM login gnome-keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 # Terminal emulator
 urxvtd &
 
 # dwm status
 ~/scripts/status/status.sh "#22a2c9" &
+
+# redshift color temperature
+redshift -l manual -l 52.25:4.55 &
 
 # Start dwm in a loop
 while true; do
