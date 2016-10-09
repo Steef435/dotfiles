@@ -18,7 +18,7 @@ case $HOST in
 	steef-archlinux)
 		disphost=""
 		;;
-	amilo-arch)
+	kepler)
 		disphost=""
 		;;
 	*)
@@ -40,9 +40,6 @@ esac
 PROMPT="%F{blue}$dispuser$disphost%~ %#%f "
 # Right prompt
 RPROMPT="%F{blue}[%?] %T%f"
-
-# Command not found hook (https://github.com/metti/command-not-found)
-[ -r /etc/profile.d/cnf.sh ] && . /etc/profile.d/cnf.sh
 
 # Vi keybindings
 bindkey -v
@@ -79,18 +76,11 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
 	zle -N zle-line-finish
 fi
 
-# Set Base16 colorscheme
-source $HOME/.colors/base16-ateliersulphurpool.dark.sh
-
 # ls colors
-alias ls='ls --color=auto'
+alias ls='ls -N --color=auto'
 
 # youtube-dl audio only
 alias yta='youtube-dl -x'
-
-# less syntax highlighting
-export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
-export LESS='-R '
 
 # Set some defaults
 export EDITOR="vim"
